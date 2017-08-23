@@ -1,0 +1,9 @@
+O arquivo de webpack DEVE ter exatamente o nome:
+    webpack.config.js
+
+        No arquivo webpack.config.js, eu crio um modulo com os parametros:
+        entry: '[com o caminho do arquivo entry]'
+        output: {
+            path: '[caminho da pasta que for salva bundle]',
+            filename: '[nome do arquivo bundle que será criado]'
+        }
