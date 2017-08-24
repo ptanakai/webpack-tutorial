@@ -70,7 +70,7 @@
 const { sayHelloTo } = __webpack_require__(1);
 
 const span = document.createElement('span');
-span.innerText = sayHelloTo('Javascript Developer');
+span.innerText = sayHelloTo('JS Developer');
 
 document.body.appendChild(span);
 
