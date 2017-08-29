@@ -17,7 +17,12 @@ module.exports = {
             {
                 test: /\.css$/,
                 include: [path.resolve(__dirname, 'src/css')],
-                loader: 'style!css'
+                loader: 'style-loader!css-loader'
+            },
+            {
+                test: /\.sass$/,
+                include: [path.resolve(__dirname, 'src/css')],
+                loader: "sass"
             }
         ]
     }
