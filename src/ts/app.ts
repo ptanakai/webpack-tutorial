@@ -1,5 +1,5 @@
-import './../css/index.css'
-import { sayHelloTo } from './hello.ts'
+import './../styles/index'
+import { sayHelloTo } from './hello'
 
 var module: any;
 

@@ -15,15 +15,14 @@ module.exports = {
                 loader: 'ts-loader'
             },
             {
-                test: /\.css$/,
-                include: [path.resolve(__dirname, 'src/css')],
-                loader: 'style-loader!css-loader'
-            },
-            {
-                test: /\.sass$/,
-                include: [path.resolve(__dirname, 'src/css')],
-                loader: "sass"
+                test: /\.s(a|c)ss$/, //.sass .scss
+                include: [path.resolve(__dirname, 'src/styles')],
+                loader: 'style-loader!css-loader!sass-loader'
             }
+            
         ]
+    },
+    resolve: {
+        extensions: ['', '.webpack.js', '.web.js', '.js', '.json', '.ts', '.scss']
     }
 }
